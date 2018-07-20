@@ -32,7 +32,7 @@ Anti-Bot提供的App端安全SDK方案帮助您解决以下**原生App端**的�
     关于集成SDK的详细操作说明，参考：
 
     -   [iOS SDK集成指南](cn.zh-CN/快速入门/集成App端Anti-Bot SDK/iOS SDK集成指南.md#)
-    -   Android SDK集成指南
+    -   [Android SDK集成指南](cn.zh-CN/快速入门/集成App端Anti-Bot SDK/Android SDK集成指南.md#)
 5.  使用钉钉扫描下方二维码，联系Anti-Bot技术支持人员帮您测试已集成SDK的App。
 
     ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16083/7327_zh-CN.png)
