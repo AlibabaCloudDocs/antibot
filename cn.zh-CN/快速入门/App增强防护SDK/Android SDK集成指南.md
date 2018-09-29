@@ -4,7 +4,9 @@
 
 ## Android SDK文件说明 {#section_h44_z4r_n2b .section}
 
-单击[Anti-Bot SDK](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/86036/cn_zh/1532092164736/Anti-Bot-SDK-20180525.zip)，将SDK包下载并解压至本地。在sdk-Android文件夹中，包含以下iOS SDK文件：
+联系爬虫风险管理技术支持人员获取对应的SDK包，解压至本地。
+
+在sdk-Android文件夹中，包含以下iOS SDK文件：
 
 |文件|说明|
 |--|--|
@@ -18,7 +20,7 @@
 
 参考以下步骤，完成项目工程配置：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/7355_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15381915067355_zh-CN.png)
 
 1.  在Android Studio中导入Anti-Bot SDK的aar文件。将sdk-Android文件夹中所有aar文件复制到Android App工程项目的`libs`目录中。
 
@@ -99,7 +101,7 @@
 
         如果在build.gradle中配置了proguardFiles，并且开启了minifyEnabled，则表明使用了proguard-rules.pro配置文件进行混淆。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/7359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15381915067359_zh-CN.png)
 
     -   **Eclipse**
 
@@ -107,7 +109,7 @@
 
         **说明：** 混淆配置在proguard.cfg 文件中。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/7359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15381915067359_zh-CN.png)
 
     **添加keep规则**
 
@@ -222,7 +224,7 @@
 参考以下步骤，确认您的App已正确集成Anti-Bot SDK：
 
 1.  将打包生成的APK文件通过修改扩展名的方式转换成ZIP压缩文件，并将该压缩文件解压至本地。
-2.  定位到工程的lib目录，确保文件夹中只存在armeabi文件夹。
+2.  定位到工程的lib目录，确保文件夹中只存在armeabi、armeabi-v7a、arm64-v8a文件夹。
 
     **说明：** 如果存在其他架构的文件夹，参考[项目工程配置](cn.zh-CN/快速入门/App增强防护SDK/Android SDK集成指南.md#section_bm1_npr_n2b)移除其它架构的文件夹。
 
