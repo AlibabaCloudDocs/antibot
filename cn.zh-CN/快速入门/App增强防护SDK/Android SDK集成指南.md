@@ -13,14 +13,13 @@
 |SecurityGuardSDK-xxx.aar|主框架SDK文件|
 |AVMPSDK-xxx.aar|虚拟机引擎插件|
 |SecurityBodySDK-xxx.aar|人机识别插件|
-|yw\_1222\_0335.jpg|主框架配置文件|
 |yw\_1222\_0335\_mwua.jpg|虚拟机引擎配置文件|
 
 ## 项目工程配置 {#section_bm1_npr_n2b .section}
 
 参考以下步骤，完成项目工程配置：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15381915067355_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393123517355_zh-CN.png)
 
 1.  在Android Studio中导入Anti-Bot SDK的aar文件。将sdk-Android文件夹中所有aar文件复制到Android App工程项目的`libs`目录中。
 
@@ -101,7 +100,7 @@
 
         如果在build.gradle中配置了proguardFiles，并且开启了minifyEnabled，则表明使用了proguard-rules.pro配置文件进行混淆。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15381915067359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393123517359_zh-CN.png)
 
     -   **Eclipse**
 
@@ -109,7 +108,7 @@
 
         **说明：** 混淆配置在proguard.cfg 文件中。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15381915067359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393123517359_zh-CN.png)
 
     **添加keep规则**
 
