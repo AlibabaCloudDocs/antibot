@@ -6,7 +6,7 @@
 
 联系爬虫风险管理技术支持人员获取对应的SDK包，解压至本地。
 
-在sdk-Android文件夹中，包含以下Andriod SDK文件：
+在sdk-Android文件夹中，包含以下Android SDK文件：
 
 |文件|说明|
 |--|--|
@@ -19,7 +19,7 @@
 
 参考以下步骤，完成项目工程配置：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393128567355_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393129127355_zh-CN.png)
 
 1.  在Android Studio中导入Anti-Bot SDK的aar文件。将sdk-Android文件夹中所有aar文件复制到Android App工程项目的`libs`目录中。
 
@@ -100,7 +100,7 @@
 
         如果在build.gradle中配置了proguardFiles，并且开启了minifyEnabled，则表明使用了proguard-rules.pro配置文件进行混淆。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393128567359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393129157359_zh-CN.png)
 
     -   **Eclipse**
 
@@ -108,7 +108,7 @@
 
         **说明：** 混淆配置在proguard.cfg 文件中。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393128567359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393129157359_zh-CN.png)
 
     **添加keep规则**
 
