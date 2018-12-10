@@ -19,7 +19,7 @@
 
 参考以下步骤，完成项目工程配置：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393129127355_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15444089817355_zh-CN.png)
 
 1.  在Android Studio中导入Anti-Bot SDK的aar文件。将sdk-Android文件夹中所有aar文件复制到Android App工程项目的`libs`目录中。
 
@@ -100,7 +100,7 @@
 
         如果在build.gradle中配置了proguardFiles，并且开启了minifyEnabled，则表明使用了proguard-rules.pro配置文件进行混淆。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393129157359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15444089817359_zh-CN.png)
 
     -   **Eclipse**
 
@@ -108,7 +108,7 @@
 
         **说明：** 混淆配置在proguard.cfg 文件中。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15393129157359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15444089817359_zh-CN.png)
 
     **添加keep规则**
 
@@ -122,7 +122,7 @@
     -keep class com.alibaba.wireless.security.**{*;}
     ```
 
-7.  
+
 ## 代码编写 {#section_vnw_nrs_n2b .section}
 
 1.  导入包。
@@ -227,7 +227,7 @@
 
     **说明：** 如果存在其他架构的文件夹，参考[项目工程配置](cn.zh-CN/快速入门/App增强防护SDK/Android SDK集成指南.md#section_bm1_npr_n2b)移除其它架构的文件夹。
 
-3.  定位到工程的res/drawable目录，确认存在yw\_1222\_0335.jpg和yw\_1222\_0335\_mwua.jpg文件，且文件大小不为0。
+3.  定位到工程的res/drawable目录，确认存在yw\_1222\_0335\_mwua.jpg文件，且文件大小不为0。
 4.  通过打印日志，确保调用avmpSign接口后能生成正确的签名信息。
 
     **说明：** 如果签名信息未生成，参考错误码信息进行排查。
