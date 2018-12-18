@@ -18,7 +18,7 @@ Anti-Bot Service keeps detailed log entries for your domains, including access r
 -   report: Logging the access event
 
 |drop|
-|acl\_rule|The rule ID of the Anti-Bot Service protection that was triggered.|5472|
+|antibot\_rule|The rule ID of the Anti-Bot Service protection that was triggered.|5472|
 |antibot\_verify|The results of the verification methods used in the Anti-Bot Service.**Note:** When the value of the antibot\_action field is challenge or captcha, this value is logged.
 
 -   challenge\_fail: JS verification failed
