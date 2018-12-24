@@ -19,7 +19,7 @@
 
 参考以下步骤，完成项目工程配置：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15444089817355_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15447812427355_zh-CN.png)
 
 1.  在Android Studio中导入Anti-Bot SDK的aar文件。将sdk-Android文件夹中所有aar文件复制到Android App工程项目的`libs`目录中。
 
@@ -100,7 +100,7 @@
 
         如果在build.gradle中配置了proguardFiles，并且开启了minifyEnabled，则表明使用了proguard-rules.pro配置文件进行混淆。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15444089817359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15447812437359_zh-CN.png)
 
     -   **Eclipse**
 
@@ -108,7 +108,7 @@
 
         **说明：** 混淆配置在proguard.cfg 文件中。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15444089817359_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16085/15447812437359_zh-CN.png)
 
     **添加keep规则**
 
@@ -157,7 +157,9 @@
             |参数名|类型|是否必须|说明|
             |---|--|----|--|
             |signType|int|是|签名使用的算法。目前是固定值，填写`3`。|
-            |input|byte\[\]|否|待签名的数据，一般是整个请求体（request body）。如果请求体为空（例如POST请求的body为空、或者GET请求），则填写`null`。|
+            |input|byte\[\]|否|待签名的数据，一般是整个请求体（request body）。**说明：** 如果请求体为空（例如POST请求的body为空、或者GET请求），则填写空对象null或空字符串的Bytes值（例如，"".getBytes\("UTF-8"\)\)。
+
+|
 
         -   返回值：byte\[\]类型，返回签名串。
         -   **示例代码**：客户端向服务器端发送数据时，需要调用avmpSign接口对整个body数据进行签名处理，所得到的签名串就是wToken。

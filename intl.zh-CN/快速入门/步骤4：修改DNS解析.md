@@ -4,7 +4,7 @@
 
 建议您使用CNAME方式接入Anti-Bot，成功添加域名到防爬风险管理控制台后，Anti-Bot会为域名分配一个CNAME值，您只需添加/修改域名的CNAME解析记录为分配的CNAME值，即可完成接入。
 
-**说明：** 参考[步骤1：添加域名](cn.zh-CN/快速入门/步骤1：添加域名.md#)中的方法查看并记录Anti-Bot为该网站域名分配的CNAME值，如`xxxxxxxxxxxxx.alicloudwaf.com`。
+**说明：** 参考[步骤1：添加域名](intl.zh-CN/快速入门/步骤1：添加域名.md#)中的方法查看并记录Anti-Bot为该网站域名分配的CNAME值，如`xxxxxxxxxxxxx.alicloudwaf.com`。
 
 ## CNAME接入说明 {#section_ibk_vws_l2b .section}
 
@@ -28,8 +28,6 @@ Anti-Bot通常采用CNAME解析的方式将网站接入进行防护，也支持A
 
 -   由于不同DNS解析记录类型存在冲突，对于同一个主机记录，CNAME记录与A记录、MX记录、TXT记录等其他记录互相冲突。您需要删除原其它记录后再添加CNAME记录解析记录，或者将原记录类型修改为CNAME类型。
 
-    关于DNS解析记录互斥的详细说明，参考[解析记录冲突的规则](https://help.aliyun.com/knowledge_detail/39787.html)。
-
     **说明：** 删除其它解析记录并新增CNAME解析记录的过程应尽可能在短时间内完成。如果删除A记录后长时间没有添加CNAME解析记录，可能导致域名无法正常解析。
 
 -   如果必须保留MX记录（邮件服务器记录），您可以使用A记录解析的方式将域名解析到Anti-Bot的IP。通过Ping CNAME获取所分配的Anti-Bot实例的IP（该IP地址一般不会频繁变更）后，将网站域名A解析记录类型的记录值修改为该Anti-Bot实例的IP。
@@ -43,26 +41,19 @@ Anti-Bot通常采用CNAME解析的方式将网站接入进行防护，也支持A
 
 **阿里云云解析配置示例**
 
-**说明：** 如果您使用[阿里云云解析DNS](https://wanwang.aliyun.com/domain/dns)进行域名解析，并且在执行[步骤1：添加域名](cn.zh-CN/快速入门/步骤1：添加域名.md#)前已经为域名设置并启用了A记录（且如果是中国大陆域名，已完成备案），则您在添加网站配置时，可以一键添加网站并自动更新解析记录。以下操作步骤适用于您的域名已经添加到Anti-Bot域名列表，但DNS解析状态为异常的情况。
+**说明：** 如果您使用[阿里云云解析DNS](https://www.alibabacloud.com/product/dns)进行域名解析，并且在执行[步骤1：添加域名](intl.zh-CN/快速入门/步骤1：添加域名.md#)前已经为域名设置并启用了A记录（且如果是中国大陆域名，已完成备案），则您在添加网站配置时，可以一键添加网站并自动更新解析记录。以下操作步骤适用于您的域名已经添加到Anti-Bot域名列表，但DNS解析状态为异常的情况。
 
 参照以下步骤，在阿里云云解析修改CNAME记录来接入Anti-Bot：
 
 1.  登录[阿里云云解析控制台](https://dns.console.aliyun.com/#/dns/domainList)。
 2.  选择要操作的域名，单击其操作列的**解析设置**。
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15738/7143_zh-CN.png)
-
 3.  选择要操作的主机记录，单击其操作列下的**修改**。
 
     **说明：** 您也可以删除已有的A记录，然后单击**添加记录**，添加一条新的CNAME记录。删除原解析记录后，请尽快添加CNAME解析记录，否则可能导致网站域名解析失败。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15738/7145_zh-CN.png)
-
 4.  将记录类型修改为**CNAME**，记录值修改为Anti-Bot所分配的CNAME值。
 
     **说明：** TTL值一般建议设置为600秒（即10分钟）。TTL值越大，则DNS记录的同步和更新越慢。
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15738/7146_zh-CN.png)
 
 
 **花生壳配置示例**
@@ -70,10 +61,6 @@ Anti-Bot通常采用CNAME解析的方式将网站接入进行防护，也支持A
 部分域名提供商（如花生壳）可能不支持直接修改已有解析记录的记录类型和主机记录，您需要删除原有的A记录后，再添加新的CNAME解析记录。
 
 **说明：** 删除原解析记录后，请尽快完成添加CNAME解析记录，否则可能导致网站域名解析失败。
-
-参照下图设置来修改您的域名在花生壳上的DNS解析信息。
-
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15738/7147_zh-CN.png)
 
 ## 验证DNS配置 { .section}
 
