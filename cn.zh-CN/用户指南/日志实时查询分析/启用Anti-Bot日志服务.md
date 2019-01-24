@@ -1,6 +1,6 @@
 # 启用Anti-Bot日志服务 {#concept_obb_qxt_cgb .concept}
 
-日志服务（SLS）支持实时采集阿里云爬虫风险管理已防护的网站访问日志以及防护日志，并支持对采集到的日志数据进行实时检索与分析。
+日志服务（Log Service）支持实时采集阿里云爬虫风险管理（Anti-Bot Service，简称Anti-Bot）已防护的网站访问日志以及防护日志，并支持对采集到的日志数据进行实时检索与分析。
 
 您可以在爬虫风险管理控制台中基于采集到的网站日志对网站的访问和攻击行为进行即时分析研究、协助您的安全管理人员制定防护策略。
 
@@ -11,20 +11,20 @@
 
     **说明：** 如果您是第一次使用爬虫风险管理的日志服务，需要单击**授权**，并根据页面提示完成授权操作，授权爬虫风险管理产品将记录的所有日志存储到您专属的日志服务Logstore中。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/79894/154511583434260_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/79894/154832652434260_zh-CN.png)
 
 3.  单击网站域名下拉框，选择需要启用日志服务的网站域名，单击启用开关。
 
     **说明：** 网站域名下拉列表中将展示所有您已接入爬虫风险管理进行防护的网站域名。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/79894/154511583434261_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/79894/154832652534261_zh-CN.png)
 
 
 至此，您已成功为该网站域名开启日志服务。日志服务会在您的阿里云账号中自动创建一个专属日志库和专属Logstore，爬虫风险管理自动将所有启用日志服务的网站域名的日志实时导入该专属日志库（antibot-logstore）。
 
 然后，您就可以对启用日志服务的网站域名的访问日志进行检索和分析。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/79894/154511583434262_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/79894/154832652534262_zh-CN.png)
 
 ## 限制与说明 {#section_fzx_gzt_cgb .section}
 
