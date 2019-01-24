@@ -1,6 +1,6 @@
 # 步骤4：修改DNS解析 {#concept_wbs_qws_l2b .concept}
 
-通过修改域名的DNS解析记录将网站域名解析到Anti-Bot，完成业务正式接入。
+通过修改域名的DNS解析记录将网站域名解析到爬虫风险管理（Anti-Bot Service，简称Anti-Bot）实例，完成业务正式接入。
 
 建议您使用CNAME方式接入Anti-Bot，成功添加域名到防爬风险管理控制台后，Anti-Bot会为域名分配一个CNAME值，您只需添加/修改域名的CNAME解析记录为分配的CNAME值，即可完成接入。
 
