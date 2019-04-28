@@ -6,7 +6,7 @@
 
     -   **服务器地址**：勾选**IP**并填写ECS公网IP、SLB公网IP，或云外机房服务器的IP。
     -   **Anti-Bot前是否有七层代理（高防/CDN等）**：勾选**是**。
-    具体操作请参考[添加域名配置](../cn.zh-CN/快速入门/步骤1：添加域名.md#)。
+    具体操作请参考[添加域名配置](../intl.zh-CN/快速入门/步骤1：添加域名.md#)。
 
 2.  在高防IP管理控制台中添加网站配置。操作步骤如下： 
     1.  在**接入** \> **网站**页面，单击**添加域名**。
@@ -16,15 +16,15 @@
         -   **协议类型**：勾选源站支持的协议类型。
         -   **源站IP/域名**：勾选**源站域名**并填写爬虫风险管理生成的CNAME地址。
 
-            **说明：** 关于如何查看爬虫风险管理生成的CNAME地址，请参考[查看爬虫风险管理分配的CNAME地址](../cn.zh-CN/快速入门/步骤1：添加域名.md#section_uvb_gnv_fgb)。
+            **说明：** 关于如何查看爬虫风险管理生成的CNAME地址，请参考[查看爬虫风险管理分配的CNAME地址](../intl.zh-CN/快速入门/步骤1：添加域名.md#section_uvb_gnv_fgb)。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15557/154832644433576_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15557/155644626933576_zh-CN.png)
 
     3.  单击**下一步**。
     4.  完成任务**选择实例与线路**。
 3.  变更域名的DNS解析。登录域名的DNS系统，添加一条CNAME记录，将网站域名的解析地址指向DDoS高防生成的CNAME地址。 
 
-    具体操作请参考[DDoS高防CNAME接入流程](https://help.aliyun.com/document_detail/40532.html)。
+    具体操作请参考[DDoS高防CNAME接入流程](https://www.alibabacloud.com/help/doc-detail/40532.htm)。
 
 
 完成上述配置后，网站流量先经过DDoS高防，再转发到爬虫风险管理实现防护。
