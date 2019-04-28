@@ -11,20 +11,18 @@ You can analyze the website access and attack behaviors based on the website log
 
     **Note:** If you are using Log Service for Anti-Bot for the first time, click **Authorize** to authorize Anti-Bot to store all the recorded logs in your logstore as instructed.
 
-    ![](images/34260_en-US.png)
-
 3.  From the Website Domain drop-down list, select the website domain name for which you want to enable Log Service. Then, click Enable.
 
     **Note:** The Website Domain drop-down list displays all the website domain names configured with Anti-Bot.
 
-    ![](images/34261_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/79894/155644785134261_en-US.png)
 
 
 Now, Log Service has been enabled for the website domain name. Log Service automatically creates a dedicated logstore for your Alibaba Cloud account. Anti-Bot automatically imports the logs of all the website domain names enabled with Log Service to the dedicated logstore in real time.
 
 Then, you can retrieve and analyze the access logs of the website domain names enabled with Log Service.
 
-![](images/34262_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/79894/155644785134262_en-US.png)
 
 ## Restrictions and instructions {#section_fzx_gzt_cgb .section}
 
