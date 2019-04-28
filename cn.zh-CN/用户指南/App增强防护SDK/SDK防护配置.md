@@ -4,7 +4,7 @@
 
 SDK的完整接入流程如下：
 
-1.  在App上完成SDK集成操作，具体请参考[iOS SDK集成指南](cn.zh-CN/用户指南/App增强防护SDK/iOS SDK集成指南.md#)和[Android SDK集成指南](cn.zh-CN/用户指南/App增强防护SDK/Android SDK集成指南.md#)。
+1.  在App上完成SDK集成操作，具体请参考[iOS SDK集成指南](intl.zh-CN/用户指南/App增强防护SDK/iOS SDK集成指南.md#)和[Android SDK集成指南](intl.zh-CN/用户指南/App增强防护SDK/Android SDK集成指南.md#)。
 2.  在爬虫风险管理控制台中配置防护路径。具体请参考[配置路径防护](#)。
 3.  使用集成了SDK的App发送测试请求，并通过响应和日志分析调试错误和异常，直到确认正确集成。
 4.  发布正确集成SDK的新版本App，并在爬虫风险管理控制台中开启防护。具体请参考[开启APP增强防护](#)。
@@ -49,7 +49,7 @@ SDK的完整接入流程如下：
     -   **阻断**： 阻断请求，返回405状态码。
 |
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62065/155287885534522_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62065/155644700534522_zh-CN.png)
 
 5.  单击**确定**完成新增。
 
@@ -89,7 +89,7 @@ SDK的完整接入流程如下：
     -   **阻断**：阻断请求，返回405状态码。
  |
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62065/155287885534523_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62065/155644700534523_zh-CN.png)
 
 5.  单击**确定**完成新增。
 
@@ -106,7 +106,7 @@ SDK的完整接入流程如下：
 
     **说明：** 未集成SDK或未调试完成前，请不要为生产环境中的域名开启阻断模式；否则可能会因为SDK没有正确集成导致合法请求被拦截。在测试接入阶段，可以开启观察模式，通过日志调试SDK集成。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62065/155287885534521_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62065/155644700534521_zh-CN.png)
 
 
 ## 更多帮助 {#section_h5t_myx_dgb .section}
@@ -115,5 +115,5 @@ SDK的完整接入流程如下：
 
 **说明：** 请参考[钉钉官网](https://www.dingtalk.com)，下载并安装钉钉即时通信软件。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62065/155287885534524_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62065/155644700534524_zh-CN.png)
 
