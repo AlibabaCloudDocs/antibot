@@ -80,11 +80,11 @@ log_format  main  '$http_x_forwarded_for - $remote_user [$time_local] "$request"
 1.  根据服务器的操作系统版本将x86\\Release或者x64\\Release目录中的F5XFFHttpModule.dll和F5XFFHttpModule.ini文件拷贝到指定目录（例如，C:\\x\_forwarded\_for\\x86或C:\\x\_forwarded\_for\\x64），并确保IIS进程对该目录有读取权限。
 2.  在**IIS服务器**选项中，双击打开**模块**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15556455997620_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15564489427620_zh-CN.png)
 
 3.  单击**配置本机模块**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15556455997621_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15564489447621_zh-CN.png)
 
 4.  在**配置本机模块**对话框中，单击**注册**，分别注册已下载的DLL文件。
 
@@ -94,15 +94,15 @@ log_format  main  '$http_x_forwarded_for - $remote_user [$time_local] "$request"
     -   注册模块 x\_forwarded\_for\_x64
         -   **名称**：x\_forwarded\_for\_x64
         -   **路径**：C:\\x\_forwarded\_for\\x64\\F5XFFHttpModule.dll
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15556455997622_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15564489447622_zh-CN.png)
 
 5.  注册完成后，勾选新注册的模块（x\_forwarded\_for\_x86 和 x\_forwarded\_for\_x64）并单击**确定**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15556456007624_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15564489447624_zh-CN.png)
 
 6.  在API 和CGI限制中，分别添加已注册的DLL，并将其**限制**改为**允许**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15556456007625_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15588/15564489467625_zh-CN.png)
 
 7.  重启IIS服务器，等待配置生效。
 
