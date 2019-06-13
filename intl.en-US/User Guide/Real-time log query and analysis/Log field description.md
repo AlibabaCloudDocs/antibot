@@ -73,8 +73,4 @@ Log Service for Anti-Bot Service \(Anti-Bot\) records the access logs and attack
 
  |close|
 |wxbb\_invalid\_wua|For more information about app protection, consult your technical engineer.|valid wua|
-|wxbb\_vmp\_verify|Whether the VMP signature is valid. -   true: valid
--   false: invalid
-
- |true|
 
