@@ -67,7 +67,6 @@ Log Service for Anti-Bot Service \(Anti-Bot\) records the access logs and attack
 |user\_id|AliUID of the Alibaba Cloud account.|12345678|
 |wxbb\_action|If the protection type of Anti-Bot is app protection, the following actions are supported: -   close: intercepts requests. That is, the antibot\_action field is set to drop.
 -   test: only monitors requests. That is, the antibot\_action field is set to report.
--   pass: allows requests.
 
  **Note:** This field is set to - if SDK protection is not configured.
 
