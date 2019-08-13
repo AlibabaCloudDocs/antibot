@@ -15,7 +15,7 @@ The Alibaba Cloud Bot Intelligence Library is calculated based on Alibaba Cloud'
 
 1.  Log on to the [Anti-Bot Service management console](https://yundun.console.aliyun.com/?p=antibot). 
 2.  In the left-side navigation pane, select **Protection** \> **Bot Intelligence**. 
-3.   In the domain name drop-down box, select the domain name to be configured.![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/155644693138754_en-US.png)
+3.   In the domain name drop-down box, select the domain name to be configured.![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/156569185738754_en-US.png)
 
  
 4.  Complete the following configuration respectively on the Allowed Crawlers and Threat Intelligence tab pages. 
@@ -24,7 +24,7 @@ The Alibaba Cloud Bot Intelligence Library is calculated based on Alibaba Cloud'
 
             **Note:** If you no longer need this feature, turn off the **Enable** switch on this page.
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/155644693138738_en-US.jpg)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/156569185738738_en-US.jpg)
 
         2.  In the rule list, locate to a valid crawler according to the **Intelligence Name**, and turn on the corresponding **Status** switch to allow requests from it. Currently, crawling requests from the following search engines can be configured: GoogleBot, BingBot, BaiduSpider, SogouSpider, 360 Spider, and YandexBot.
 
@@ -35,7 +35,7 @@ The Alibaba Cloud Bot Intelligence Library is calculated based on Alibaba Cloud'
 
             **Note:** If you no longer need this feature, turn off the **Enable** switch on this page.
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/155644693138753_en-US.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/156569185738753_en-US.png)
 
         2.  In the rule list, locate to an IP blacklist according to the **Intelligence Name**, and turn on the corresponding **Status** switch. The optional IP blacklists are as follows:
 
@@ -61,7 +61,7 @@ We recommend that you enable two-step verification for the high-level blacklist.
         3.  \(Optional\) Select the default rule to be configured and click **Edit**.
         4.  \(Optional\) In the Edit Intelligence dialog box, complete the following configuration:
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/155644693138755_en-US.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/156569185838755_en-US.png)
 
             |Configuration|Description|
             |-------------|-----------|
@@ -86,13 +86,13 @@ We recommend that you enable two-step verification for the high-level blacklist.
 
                 Rule configuration:
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/155644693138739_en-US.jpg)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/156569185838739_en-US.jpg)
 
             -   Rule description: Use this rule to protect the URLs starting with "/houselist" under the current domain name. When the request source IP address matches the Malicious Crawler IP Blacklist \(High\), perform JavaScript verification on the request.
 
                 Rule configuration:
 
-                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/155644693138740_en-US.jpg)
+                ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/123806/156569185838740_en-US.jpg)
 
         5.  \(Optional\) Click**OK** to finish the configuration.
 
