@@ -10,7 +10,7 @@ You can use Anti-Bot Service to defend against bot attacks.
 
     **Note:** Specify the following fields based on your needs: [Extra Domain](intl.en-US/Pricing/Increase the limit on domains.md#), Extra App, [Extra QPS, and Extra Bandwidth](intl.en-US/Pricing/Increase the limits on the service bandwidth and request rate.md#).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15734/155896086938011_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15734/156577454638011_en-US.png)
 
     **Note:** You can upgrade your Anti-Bot instance specifications later.
 
